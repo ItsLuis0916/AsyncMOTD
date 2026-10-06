@@ -1,0 +1,98 @@
+title: "&#444444▶ MOTD Presets"
+size: 54
+preset-area: "0-44"
+
+open-sound: "ENTITY_CHICKEN_EGG"
+open-sound-volume: 0.5
+open-sound-pitch: 1.2
+click-sound: "ENTITY_CHICKEN_EGG"
+click-sound-volume: 0.5
+click-sound-pitch: 1.1
+
+preset-item:
+  material: PAPER
+  active-material: LIME_STAINED_GLASS_PANE
+  name: "&#00d3ff▶ &l{preset}"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#00d3ffInformation:"
+    - "&#00d3ff● &fLine 1: &#00d3ff{line-1}"
+    - "&#00d3ff● &fLine 2: &#00d3ff{line-2}"
+    - "&#00d3ff● &fIcon: &#00d3ff{icon}"
+    - "&#00d3ff● &fStatus: {status}"
+    - ""
+    - "&#00d3ff▶ &#00d3ff&l&nLEFT-CLICK&r &#00d3ffto activate"
+    - "&#00d3ff▶ &#00d3ff&l&nRIGHT-CLICK&r &#00d3ffto edit"
+
+create:
+  slot: 49
+  material: LIME_SHULKER_BOX
+  glow: true
+  name: "&#88f545▶ &lCREATE PRESET"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#88f545Information:"
+    - "&fAdd a new MOTD preset and"
+    - "&fname it in the chat."
+    - ""
+    - "&#88f545▶ &#88f545&l&nCLICK&r &#88f545to create"
+
+close:
+  slot: 45
+  material: RED_SHULKER_BOX
+  glow: false
+  name: "&#f6035c✘ &lCLOSE"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#f6035cInformation:"
+    - "&fClose this menu."
+    - ""
+    - "&#f6035c▶ &#f6035c&l&nCLICK&r &#f6035cto close"
+
+previous:
+  slot: 48
+  material: ARROW
+  glow: false
+  name: "&#00d3ff◀ &lPREVIOUS PAGE"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#00d3ffInformation:"
+    - "&fGo back one page."
+    - ""
+    - "&#00d3ff▶ &#00d3ff&l&nCLICK&r &#00d3ffto go back"
+
+next:
+  slot: 50
+  material: ARROW
+  glow: false
+  name: "&#00d3ff▶ &lNEXT PAGE"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#00d3ffInformation:"
+    - "&fGo forward one page."
+    - ""
+    - "&#00d3ff▶ &#00d3ff&l&nCLICK&r &#00d3ffto go forward"
+
+page-indicator:
+  slot: 53
+  material: PAPER
+  glow: false
+  name: "&#00d3ff● &lPAGE {page}"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#00d3ffInformation:"
+    - "&#00d3ff● &fPage: &#00d3ff{page}&f/&#00d3ff{max-page}"
+    - "&#00d3ff● &fPresets: &#00d3ff{amount}"
+
+filler:
+  slots: [46, 47, 51, 52]
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "
+  lore: []
+  glow: false

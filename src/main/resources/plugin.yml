@@ -1,0 +1,16 @@
+name: AsyncMOTD
+main: dev.luis.asyncmotd.Main
+version: 1.0
+api-version: 1.21
+authors: [ luis ]
+folia-supported: true
+
+commands:
+  motd:
+    description: Manage the server MOTD presets.
+    usage: /motd
+    permission: asyncmotd.admin
+
+permissions:
+  asyncmotd.admin:
+    default: op

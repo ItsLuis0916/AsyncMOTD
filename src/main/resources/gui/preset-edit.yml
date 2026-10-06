@@ -1,0 +1,152 @@
+title: "&#444444✎ Edit Preset &8({preset})"
+size: 27
+
+open-sound: "ENTITY_CHICKEN_EGG"
+open-sound-volume: 0.5
+open-sound-pitch: 1.2
+click-sound: "ENTITY_CHICKEN_EGG"
+click-sound-volume: 0.5
+click-sound-pitch: 1.1
+
+line-1:
+  slot: 10
+  field: "line-1"
+  material: WRITABLE_BOOK
+  glow: false
+  name: "&#00d3ff✎ &lFIRST LINE"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#00d3ffInformation:"
+    - "&#00d3ff● &fCurrent: &#00d3ff{value}"
+    - ""
+    - "&#00d3ff▶ &#00d3ff&l&nCLICK&r &#00d3ffto edit"
+
+line-2:
+  slot: 11
+  field: "line-2"
+  material: WRITABLE_BOOK
+  glow: false
+  name: "&#00d3ff✎ &lSECOND LINE"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#00d3ffInformation:"
+    - "&#00d3ff● &fCurrent: &#00d3ff{value}"
+    - ""
+    - "&#00d3ff▶ &#00d3ff&l&nCLICK&r &#00d3ffto edit"
+
+version:
+  slot: 12
+  field: "version"
+  material: WRITABLE_BOOK
+  glow: false
+  name: "&#00d3ff✎ &lVERSION TEXT"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#00d3ffInformation:"
+    - "&fShown instead of the version"
+    - "&fnumber in the server list."
+    - ""
+    - "&#00d3ff● &fCurrent: &#00d3ff{value}"
+    - ""
+    - "&#00d3ff▶ &#00d3ff&l&nCLICK&r &#00d3ffto edit"
+
+info:
+  slot: 13
+  material: PAPER
+  glow: false
+  name: "&#00d3ff● &l{preset}"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#00d3ffInformation:"
+    - "&#00d3ff● &fStatus: {status}"
+    - "&#00d3ff● &fHover lines: &#00d3ff{hover-lines}"
+    - "&#00d3ff● &fIcon: &#00d3ff{icon}"
+
+icon:
+  slot: 14
+  field: "icon"
+  material: PAINTING
+  glow: false
+  name: "&#00d3ff● &lSERVER ICON"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#00d3ffInformation:"
+    - "&fCycles through every file in"
+    - "&fthe icons folder."
+    - ""
+    - "&#00d3ff● &fCurrent: &#00d3ff{icon}"
+    - "&#00d3ff● &fAvailable: &#00d3ff{icon-amount}"
+    - ""
+    - "&#00d3ff▶ &#00d3ff&l&nCLICK&r &#00d3ffto cycle icon"
+
+hover:
+  slot: 15
+  field: "hover"
+  material: WRITABLE_BOOK
+  glow: false
+  name: "&#00d3ff✎ &lHOVER TEXT"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#00d3ffInformation:"
+    - "&fShown when a player hovers the"
+    - "&fplayer count in the server list."
+    - ""
+    - "&#00d3ff● &fLines: &#00d3ff{hover-lines}"
+    - ""
+    - "&#00d3ff▶ &#00d3ff&l&nLEFT-CLICK&r &#00d3ffto add a line"
+    - "&#00d3ff▶ &#00d3ff&l&nSHIFT-CLICK&r &#00d3ffto clear"
+
+activate:
+  slot: 22
+  material: LIME_SHULKER_BOX
+  glow: true
+  name: "&#88f545✔ &lACTIVATE"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#88f545Information:"
+    - "&fShow this preset in the"
+    - "&fserver list."
+    - ""
+    - "&#88f545● &fStatus: {status}"
+    - ""
+    - "&#88f545▶ &#88f545&l&nCLICK&r &#88f545to activate"
+
+delete:
+  slot: 26
+  material: TNT
+  glow: false
+  name: "&#ff3352☠ &lDELETE"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#ff3352Information:"
+    - "&fRemove this preset for good."
+    - ""
+    - "&#ff3352▶ &#ff3352&l&nSHIFT-CLICK&r &#ff3352to delete"
+
+back:
+  slot: 18
+  material: RED_SHULKER_BOX
+  glow: false
+  name: "&#f6035c◀ &lBACK"
+  lore:
+    - "&8Description"
+    - ""
+    - "&#f6035cInformation:"
+    - "&fReturn to the preset list."
+    - ""
+    - "&#f6035c▶ &#f6035c&l&nCLICK&r &#f6035cto go back"
+
+filler:
+  slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 16, 17, 19, 20, 21, 23, 24, 25]
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "
+  lore: []
+  glow: false

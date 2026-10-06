@@ -1,0 +1,464 @@
+prefix: "&#00d3ff&lMOTD &7» "
+
+no-permission:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&#FF0000You do not have permission to use this command!"
+  actionbar-enabled: true
+  actionbar: "&#FF0000You do not have permission to use this command!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_VILLAGER_NO"
+  sound-volume: 0.8
+  sound-pitch: 1.0
+
+player-only:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&#FF0000This action can only be used in-game."
+  actionbar-enabled: false
+  actionbar: ""
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: false
+  sound: "ENTITY_VILLAGER_NO"
+  sound-volume: 0.8
+  sound-pitch: 1.0
+
+usage:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - ""
+    - "&#00d3ff&m--------&r &#00d3ff⚑ &lASYNCMOTD &r&#00d3ff&m--------"
+    - "&#00d3ff▶ &f/motd &8- &fOpen the preset menu."
+    - "&#00d3ff▶ &f/motd list &8- &fList all presets."
+    - "&#00d3ff▶ &f/motd create &#00d3ff<name> &8- &fCreate a preset."
+    - "&#00d3ff▶ &f/motd delete &#00d3ff<name> &8- &fDelete a preset."
+    - "&#00d3ff▶ &f/motd activate &#00d3ff<name> &8- &fActivate a preset."
+    - "&#00d3ff▶ &f/motd line1 &#00d3ff<name> <text> &8- &fSet the first line."
+    - "&#00d3ff▶ &f/motd line2 &#00d3ff<name> <text> &8- &fSet the second line."
+    - "&#00d3ff▶ &f/motd version &#00d3ff<name> <text> &8- &fSet the version text."
+    - "&#00d3ff▶ &f/motd icon &#00d3ff<name> <file> &8- &fSet the server icon."
+    - "&#00d3ff▶ &f/motd hover &#00d3ff<name> add|remove|clear &8- &fEdit the hover."
+    - "&#00d3ff▶ &f/motd reload &8- &fReload all files."
+    - ""
+  actionbar-enabled: false
+  actionbar: ""
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  sound-volume: 0.6
+  sound-pitch: 1.2
+
+preset-not-found:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&#FF0000The preset {preset} does not exist."
+  actionbar-enabled: true
+  actionbar: "&#FF0000Preset {preset} does not exist."
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_VILLAGER_NO"
+  sound-volume: 0.8
+  sound-pitch: 1.0
+
+preset-exists:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&#FF0000The preset {preset} already exists."
+  actionbar-enabled: true
+  actionbar: "&#FF0000Preset {preset} already exists."
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_VILLAGER_NO"
+  sound-volume: 0.8
+  sound-pitch: 1.0
+
+invalid-id:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&#FF0000That name is not allowed. Use letters, numbers, - and _ only."
+  actionbar-enabled: true
+  actionbar: "&#FF0000Invalid preset name!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_VILLAGER_NO"
+  sound-volume: 0.8
+  sound-pitch: 1.0
+
+preset-created:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&fPreset &#00d3ff{preset} &fhas been created!"
+  actionbar-enabled: true
+  actionbar: "&#00d3ff{preset} &fcreated!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_PLAYER_LEVELUP"
+  sound-volume: 1.0
+  sound-pitch: 1.0
+
+preset-deleted:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&fPreset &#00d3ff{preset} &fhas been deleted!"
+  actionbar-enabled: true
+  actionbar: "&#00d3ff{preset} &fdeleted!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  sound-volume: 1.0
+  sound-pitch: 0.8
+
+preset-activated:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&fPreset &#00d3ff{preset} &fis now shown in the server list!"
+  actionbar-enabled: true
+  actionbar: "&#00d3ff{preset} &fis now active!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_PLAYER_LEVELUP"
+  sound-volume: 1.0
+  sound-pitch: 1.0
+
+preset-active-delete:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&#FF0000You cannot delete the active preset. Activate another one first."
+  actionbar-enabled: true
+  actionbar: "&#FF0000Cannot delete the active preset!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_VILLAGER_NO"
+  sound-volume: 0.8
+  sound-pitch: 1.0
+
+value-updated:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&f{field} of &#00d3ff{preset} &fhas been updated!"
+  actionbar-enabled: true
+  actionbar: "&#00d3ff{field} &fupdated!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  sound-volume: 1.0
+  sound-pitch: 1.2
+
+icon-not-found:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&#FF0000The icon {icon} was not found in the icons folder."
+  actionbar-enabled: true
+  actionbar: "&#FF0000Icon {icon} not found!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_VILLAGER_NO"
+  sound-volume: 0.8
+  sound-pitch: 1.0
+
+no-icons:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&#FF0000There are no icons in the icons folder."
+  actionbar-enabled: true
+  actionbar: "&#FF0000No icons available!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_VILLAGER_NO"
+  sound-volume: 0.8
+  sound-pitch: 1.0
+
+hover-added:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&fA hover line was added to &#00d3ff{preset}&f!"
+  actionbar-enabled: true
+  actionbar: "&fHover line added!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  sound-volume: 1.0
+  sound-pitch: 1.2
+
+hover-removed:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&fHover line &#00d3ff{index} &fwas removed from &#00d3ff{preset}&f!"
+  actionbar-enabled: true
+  actionbar: "&fHover line &#00d3ff{index} &fremoved!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  sound-volume: 1.0
+  sound-pitch: 0.8
+
+hover-cleared:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&fThe hover of &#00d3ff{preset} &fhas been cleared!"
+  actionbar-enabled: true
+  actionbar: "&fHover cleared!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  sound-volume: 1.0
+  sound-pitch: 0.8
+
+hover-index-invalid:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&#FF0000That hover line does not exist."
+  actionbar-enabled: true
+  actionbar: "&#FF0000Hover line does not exist!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_VILLAGER_NO"
+  sound-volume: 0.8
+  sound-pitch: 1.0
+
+input-prompt:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - ""
+    - "&#00d3ff▶ &fType the new &#00d3ff{field} &ffor &#00d3ff{preset} &finto the chat."
+    - "&7Type &#00d3ff{cancel} &7to cancel or &#00d3ff{clear} &7to empty the value."
+    - ""
+  actionbar-enabled: true
+  actionbar: "&fType the new &#00d3ff{field} &finto the chat."
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  sound-volume: 0.6
+  sound-pitch: 1.2
+
+input-prompt-create:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - ""
+    - "&#00d3ff▶ &fType the &#00d3ffname &fof the new preset into the chat."
+    - "&7Type &#00d3ff{cancel} &7to cancel."
+    - ""
+  actionbar-enabled: true
+  actionbar: "&fType the name of the new preset into the chat."
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  sound-volume: 0.6
+  sound-pitch: 1.2
+
+input-cancelled:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&#FF0000Input cancelled."
+  actionbar-enabled: true
+  actionbar: "&#FF0000Input cancelled."
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_VILLAGER_NO"
+  sound-volume: 0.8
+  sound-pitch: 1.0
+
+input-expired:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&#FF0000Your input took too long and was cancelled."
+  actionbar-enabled: true
+  actionbar: "&#FF0000Input expired!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_VILLAGER_NO"
+  sound-volume: 0.8
+  sound-pitch: 1.0
+
+list-header:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "&#00d3ff&m----&r &#00d3ff⚑ &lPRESETS &r&#00d3ff&m----"
+  actionbar-enabled: false
+  actionbar: ""
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  sound-volume: 0.6
+  sound-pitch: 1.2
+
+list-entry:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "&7● &#00d3ff{preset} &7→ &f{status}"
+  actionbar-enabled: false
+  actionbar: ""
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: false
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  sound-volume: 0.5
+  sound-pitch: 1.0
+
+config-reloaded:
+  overall-enabled: true
+  messages-enabled: true
+  messages:
+    - "{prefix}&fAll files have been reloaded!"
+  actionbar-enabled: true
+  actionbar: "&fAll files have been reloaded!"
+  title-enabled: false
+  title: ""
+  subtitle: ""
+  title-fadein: 10
+  title-stay: 70
+  title-fadeout: 20
+  sound-enabled: true
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  sound-volume: 1.0
+  sound-pitch: 1.0
+
+status-active: "&#88f545Active"
+status-inactive: "&8Inactive"
+empty-value: "&8not set"
+
+field-labels:
+  line-1: "Line 1"
+  line-2: "Line 2"
+  version: "Version Text"
+  icon: "Server Icon"
+  hover: "Hover Line"
+  create: "Preset Name"

@@ -1,0 +1,58 @@
+command:
+  name: "vmotd"
+  permission: "asyncmotd.admin"
+
+messages:
+  reloaded: "&#00B0FF&lMOTD &7▷ &fPresets reloaded."
+
+proxy-sync:
+  channel: "asyncmotd:sync"
+  secret: ""
+
+ping:
+  enabled: true
+  apply-motd: true
+  apply-icon: true
+  apply-hover: true
+  apply-version: true
+  legacy-named-colors: true
+  legacy-overrides:
+    "00d3ff": "aqua"
+    "ff0000": "red"
+
+gradient:
+  enabled: true
+  regex: "<gradient:(#[0-9a-fA-F]{6}(?::#[0-9a-fA-F]{6})+)>(.*?)</gradient>"
+  color-separator: ":"
+  color-format: "&#%s"
+  keep-codes: "klmno"
+
+center:
+  enabled: true
+  width: 270
+  offset: -8
+  space-width: 4
+  default-width: 6
+  bold-extra: 1
+  reset-code: "&r"
+  char-widths:
+    "2": "!',.:;i|┇"
+    "3": "`l∙│"
+    "4": "\"()*I[]t{}ɪ⏴⏵◘◦"
+    "5": "<>fk⌠⌡●"
+    "7": "@~»√≈≡⏩⏪▶▷◀◁⛄✔✘❌🔥🪓"
+    "8": "©←→⇄∞⌂⌚⌛⏳⏻░◎☂☃☄★☆☔☠☻♫♬⚐⚑⚓⚗⛨✂✉✎❄❤⭐⭘⯪⯫🔔🛡🧪🪣"
+    "9": "▒▓☀☁☽⛈⛏🌊🌧🍖🎣🏹🔱🗡"
+    "10": "☐☑☒☯⚠"
+
+version:
+  force-display: false
+  protocol: -1
+
+icons:
+  folder: "icons"
+  extension: ".png"
+
+placeholders:
+  online: "{online}"
+  max: "{max}"

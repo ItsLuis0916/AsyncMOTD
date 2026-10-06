@@ -1,0 +1,26 @@
+active: "default"
+
+presets:
+  default:
+    line-1: "&#00d3ff⚑ &lASYNC NETWORK"
+    line-2: "&7ᴊᴏɪɴ ɴᴏᴡ &8● &#00d3ffplay.example.net"
+    version: "&#00d3ffAsync &fNetwork"
+    icon: ""
+    hover:
+      - "&#00d3ff⚑ &lASYNC NETWORK"
+      - ""
+      - "&#00d3ff● &fOnline: &#00d3ff{online}&f/&#00d3ff{max}"
+      - ""
+      - "&#00d3ff▶ &fJoin now!"
+
+  maintenance:
+    line-1: "&#FF0000⚠ &lMAINTENANCE"
+    line-2: "&7ᴡᴇ ᴀʀᴇ ʙᴀᴄᴋ sᴏᴏɴ &8● &#00d3ffdiscord.gg/example"
+    version: "&#FF0000Maintenance"
+    icon: ""
+    hover:
+      - "&#FF0000⚠ &lMAINTENANCE"
+      - ""
+      - "&#00d3ff● &fThe server is currently offline."
+      - ""
+      - "&#00d3ff▶ &fJoin our Discord for updates."
