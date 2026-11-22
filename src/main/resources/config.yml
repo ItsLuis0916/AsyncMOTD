@@ -1,3 +1,5 @@
+license-key: ""
+
 proxy-sync:
   enabled: false
   channel: "asyncmotd:sync"

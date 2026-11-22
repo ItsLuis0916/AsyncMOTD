@@ -6,6 +6,7 @@ import dev.luis.asyncmotd.config.PresetStore;
 import dev.luis.asyncmotd.config.ProxySync;
 import dev.luis.asyncmotd.config.Sections;
 import dev.luis.asyncmotd.gui.MenuListener;
+import dev.luis.asyncmotd.license.LicenseVerifier;
 import dev.luis.asyncmotd.listener.ChatInputListener;
 import dev.luis.asyncmotd.listener.InputManager;
 import dev.luis.asyncmotd.listener.PingListener;
@@ -28,10 +29,13 @@ public final class Main extends JavaPlugin {
     private YamlConfiguration presetsGui;
     private YamlConfiguration editGui;
     private ProxySync sync;
+    private LicenseVerifier licenseVerifier;
 
     @Override
     public void onEnable() {
         saveDefaultConfig();
+        licenseVerifier = new LicenseVerifier(this);
+        licenseVerifier.verifyAsync();
 
         messages = new MessageManager(this, MESSAGES_PATH);
         presets = new PresetStore(this, PRESETS_PATH);
@@ -51,6 +55,7 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
+        if (licenseVerifier != null) licenseVerifier.shutdown();
         stopSync();
     }
 
